@@ -1,0 +1,9 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 50px;
+  }
+  #result {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
