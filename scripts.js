@@ -1,20 +1,24 @@
-function gerarNome() {
-    const dataNascInput = document.getElementById('dataNasc');
-    const resultado = document.getElementById('result');
-    const dataNasc = new Date(dataNascInput.value);
-    const mes = dataNasc.getMonth();
+function generateName() {
+    const dateOfBirthInput = document.getElementById('dateOfBirth');
+    const result = document.getElementById('result');
+    const dateOfBirth = new Date(dateOfBirthInput.value);
+    const month = dateOfBirth.getMonth();
     
-    const palavrasPorMes = [
+    const namesPerMonth = [
       'Bouncy', 'Giggly', 'Whoopee', 'Quacky', 'Dizzy', 'Fluffy', 'Mumbo-jumbo', 'Noodlehead', 'Brouhaha', 'Higgledy-piggledy', 'Doodle', 'Jamboree'
     ];
     
-    const primeiraPalavra = palavrasPorMes[mes];
+    const firstName = namesPerMonth[month];
     
-    const dia = dataNasc.getDay();
-    let segundaPalavra = (dia <= 15) ? 'Critical' : 'Poltergeist' ;
+    const day = dateOfBirth.getDate();
+    const namesPerDay = [
+      'Dia01', 'Dia02', 'Dia03', 'Dia04', 'Dia05', 'Dia06', 'Dia07', 'Dia08', 'Dia09', 'Dia10', 'Dia11', 'Dia12', 'Dia13', 'Dia14', 'Dia15', 'Dia16', 'Dia17', 'Dia18', 'Dia19', 'Dia20', 'Dia21', 'Dia22', 'Dia23', 'Dia24', 'Dia25', 'Dia26', 'Dia27', 'Dia28', 'Dia29', 'Dia30', 'Dia31'
+    ];
+
+    const secondName = namesPerDay[day];
     
-    const nomeGerado = primeiraPalavra + ' ' + segundaPalavra;
+    const generatedName = firstName + ' ' + secondName;
     
-    resultado.textContent = 'Seu nome gerado é: ' + nomeGerado;
+    result.textContent = 'Your new gamer name is: ' + generatedName;
     
   }
