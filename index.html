@@ -4,20 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <title>Gerador de Nome</title>
+  <title>Name Generator</title>
 </head>
 
 <body>
 
 <script src="./scripts.js"></script>
 
-  <h1>Name Generator</h1>
-  <label for="dateOfBirth">Date of Birth:</label>
+<div class="smoke_animation">
+
+  <h1>Charlie Name Generator</h1>
+  <label for="dateOfBirth">Your Date of Birth:</label>
   <input type="date" id="dateOfBirth" max="9999-12-31">
   <br><br>
-  <button onclick="generateName()">Generate Name</button>
+  <button onclick="generateName()" class="buttonGenerateName">Generate your Charlie Name</button>
   <div id="result"></div>
 
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      </div>
+    </div>
+  </div>
+  
+
+</div>
 </body>
 </html>
