@@ -23,8 +23,3 @@ function generateName() {
     
 }
 
-var swiper = new swiper(".mySwiper", {
-    spaceBetween: 30,
-    effect: "fade",
-    delay: 3000,
-});

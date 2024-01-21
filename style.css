@@ -3,13 +3,13 @@ body {
     color: white;
     text-align: center;
     margin: 50px;
-    min-height: 100%;
+    /* min-height: 100%;
     width: 80vw;
     height: 80vh;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.69)), url('./images/4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center; */
 }
 
 #result {
@@ -28,6 +28,22 @@ body {
     background-color: white;
     border-radius: 5px;
     padding: 4px 8px;
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.swiper-slide img {
+  display: block;
+  height: 100%;
 }
 
 .smoke_animation {
@@ -49,3 +65,4 @@ body {
   0%{ background-position: -100% bottom; }
   100%{ background-position: 0% bottom; }
 }
+
