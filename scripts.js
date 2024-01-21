@@ -18,8 +18,11 @@ function generateName() {
     const secondName = namesPerDay[day];
     
     const generatedName = firstName + ' ' + secondName;
-    
-    result.textContent = 'Your new gamer name is: ' + generatedName;
-    
+
+    if (firstName || secondName === undefined) {
+      result.textContent = 'What is this nonsense? Input your birth date.'
+    } else {
+      result.textContent = 'Your new gamer name is: ' + generatedName;
+    }
 }
 

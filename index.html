@@ -15,33 +15,37 @@
 
 <script src="./scripts.js"></script>
 
-<div class="smoke_animation">
+<div class="smoke_animation"></div>
 
-  <h1>Charlie Name Generator</h1>
-  <label for="dateOfBirth">Your Date of Birth:</label>
-  <input type="date" id="dateOfBirth" max="9999-12-31">
-  <br><br>
-  <button onclick="generateName()" class="buttonGenerateName">Generate your Charlie Name</button>
-  <div id="result"></div>
+  <div class="overlay-content">
+
+    <h1>Charlie Name Generator</h1>
+    <label for="dateOfBirth">Your Date of Birth:</label>
+    <input type="date" id="dateOfBirth" max="9999-12-31">
+    <br><br>
+    <button onclick="generateName()" class="buttonGenerateName">Generate your Charlie Name</button>
+    <div id="result"></div>
+
+  </div>
 
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
+      <div class="swiper-slide" class="swiper-slide-transform">
         <img src="./images/1.avif" />
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide" class="swiper-slide-transform">
         <img src="./images/2.webp" />
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide" class="swiper-slide-transform">
         <img src="./images/3.webp" />
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide" class="swiper-slide-transform">
         <img src="./images/4.jpg" />
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide" class="swiper-slide-transform">
         <img src="./images/6.jpg" />
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide" class="swiper-slide-transform">
         <img src="./images/7.jpg_large" />
       </div>
     </div>
@@ -52,11 +56,11 @@
       spaceBetween: 30,
       effect: "fade",
       autoplay: {
-        delay: 2000,
+        delay: 222000,
     },
    });
   </script>
 
-</div>
+
 </body>
 </html>
